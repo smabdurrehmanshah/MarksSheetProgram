@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarksSheet-Program</title>
+</head>
+
+<body>
+  <h1>Welcome to Marks Sheet Program</h1>
+  <script>
+    var name = prompt("Enter Your Name ?");
+    var rollNo = prompt("Enter Your Roll No ?");
+    var emailID = prompt("Enter Your Email ?");
+    var phoneNo = prompt("Enter your Phone No ?");
+
+    var subject1Marks = +prompt("Enter Subject-1 Marks ?");
+    var subject2Marks = +prompt("Enter Subject-2 Marks ?");
+    var subject3Marks = +prompt("Enter Subject-3 Marks ?");
+    var subject4Marks = +prompt("Enter Subject-4 Marks ?");
+    var subject5Marks = +prompt("Enter Subject-5 Marks ?");
+
+    var totalMarks = (subject1Marks+subject2Marks+subject3Marks+subject4Marks+subject5Marks);
+    var percentage = ((subject1Marks+subject2Marks+subject3Marks+subject4Marks+subject5Marks)/500)*100;
+
+    document.write("*****<b>Personal Info</b>*****<br /><br />");
+    document.write("Name: ", name, "<br>");
+    document.write("Roll No: ", rollNo, "<br>");
+    document.write("Email: ", emailID, "<br>");
+    document.write("Phone No: ", phoneNo, "<br>");
+
+    document.write("<br /><br />*****<b>Subject Marks</b>*****<br /><br />");
+    document.write("You got "+subject1Marks+" Marks out of 100 in Subject-1.<br />");
+    document.write("You got "+subject2Marks+" Marks out of 100 in Subject-2.<br />");
+    document.write("You got "+subject3Marks+" Marks out of 100 in Subject-3.<br />");
+    document.write("You got "+subject4Marks+" Marks out of 100 in Subject-4.<br />");
+    document.write("You got "+subject5Marks+" Marks out of 100 in Subject-5.<br />");
+
+    document.write("<br /><br />*****<b>Total Marks</b>*****<br /><br />");
+    document.write("You got total marks "+totalMarks+" out of 500.<br />");
+    document.write("Your Percentage is: ", percentage.toFixed(2), "%");
+  </script>
+
+  <br /><br />
+  <a href="./ageCalculator.html">Age Calculator</a>
+</body>
+
+</html>
